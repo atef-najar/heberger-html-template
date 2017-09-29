@@ -1,0 +1,96 @@
+// CDN Features
+.cdn-features {
+	padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    h1 {
+        color: $dark-grey;
+        font-weight: $bold;
+        margin-bottom: 5px;
+    }
+    h3 {
+        color: #636a6e;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .feature-post {
+        text-align: left;
+        margin-top: 10px;
+        cursor: pointer;
+        @extend .col-lg-4, .col-md-4, .col-sm-6, .col-xs-12;
+        color: #919ba1;
+        .thumb {
+            @extend .col-lg-4, .col-md-4, .col-sm-4, .col-xs-3;
+            text-align: center;
+            img {
+                @extend .img-responsive;
+            }
+        }
+        .feature-text {
+	        @extend .col-lg-8, .col-md-8, .col-sm-8, .col-xs-9; 
+            h3 {
+                font-weight: $bold;
+                color: #7A8287;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .cdn-features .feature-post {
+	    margin-top: 20px;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .cdn-features h3 {
+	    margin-bottom: 0;
+    }
+    .cdn-features .feature-post {
+	    margin-top: 40px;
+    }
+}
+
+// CDN Intro
+.cdn-intro {
+	margin: 20px 0;
+}
+
+// CDN Prices
+.cdn-prices {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: $dark-grey;
+    background-color: #f3f3f3;
+    text-align: center;
+    h1 {
+        color: #2A363F;
+        font-weight: $bold;
+        margin-bottom: 40px;
+    }
+    .four {
+        @extend .col-lg-4, .col-md-4, .col-sm-12, .col-xs-12;
+    }
+    .package {
+        padding: 40px;
+        background-color: $white;
+        border: 1px solid $border-color;
+        height: 200px;
+        color: #8b8b8b;
+        h2 {
+            margin-top: 0;
+            color: #746F6E;
+            font-weight: $bold;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .cdn-prices .package {
+	    margin-top: 10px;
+    }
+}

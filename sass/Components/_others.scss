@@ -1,0 +1,508 @@
+// Pricing Table
+.pricing-table {
+    @extend .col-lg-4, .col-md-4, .col-sm-6, .col-xs-12, .text-center;
+    .panel {
+        border: 0;
+        cursor: default;
+        .btn {
+            font-weight: $bold;
+            i {
+                margin-left: 7px;
+            }
+        }
+    }
+    .panel, .panel-heading {
+        @include border-radius(0);
+        @include transition(all .3s ease);
+    }
+    .panel:hover {
+        box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    }
+    
+    .panel-heading {
+        color: $white;
+	    padding-top: 30px;
+        padding-bottom: 30px;
+        h3 {
+            font-size: 3.6rem;
+        }
+    }
+    
+    .panel-body {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: $white;
+        p {
+            margin-bottom: 0;
+            font-size: 4.6rem;
+        }
+    }
+    
+    ul {
+        li {
+            width: 90%;
+            margin: 0 auto;
+            border: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 2rem;
+            border-bottom: 1px solid $border-color;
+        }
+        li:last-child {
+            border-bottom: 0;
+        }
+    }
+    .panel-footer {
+        background-color: transparent;
+        padding: 0;
+    }
+    .panel.blue .panel-heading {
+        background-color: $light-blue;
+    }
+    .panel.blue .panel-body {
+        background-color: $blue;
+    } 
+    .panel.red .panel-heading {
+        background-color: $light-red;
+    }
+    .panel.red .panel-body {
+        background-color: $red;
+    } 
+    .panel.green .panel-heading {
+        background-color: $light-green;
+    }
+    .panel.green .panel-body {
+        background-color: $green;
+    } 
+    .panel.grey .panel-heading {
+        background-color: $light-grey;
+        color: $dark-grey;
+    }
+    .panel.grey .panel-body {
+        background-color: $grey;
+        color: $dark-grey;
+    } 
+    .panel.yellow .panel-heading {
+        background-color: #F1C40F;
+    }
+    .panel.yellow .panel-body {
+        background-color: #D7AF0D;
+    } 
+}
+
+.pricing-table.small {
+    @extend .col-lg-3, .col-md-3, .col-sm-6, .col-xs-12;
+}
+
+.pricing-table.recommended .panel {
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+// Tables
+.table {
+    thead {
+        font-weight: $bold;
+        color: $white;
+        tr th {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 0;
+        }
+    }
+    tbody {
+        tr td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 0;
+            color: #8E9395;
+            vertical-align: middle;
+        }
+    }
+}
+.table.center {text-align: center; thead tr th {text-align: center;}}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #f4f4f4;
+ }
+.table.red {thead{background-color: $light-red;}}
+.table.blue {thead{background-color: $light-blue;}}
+.table.green {thead{background-color: $green;}}
+.table.dark {thead{background-color: $dark-grey;}}
+.table.grey {thead{color:$dark-grey;background-color: $light-grey;}}
+.table.white {thead{color:$dark-grey;background-color: $white;}}
+
+// Big Table
+.pricing-table-big {
+    text-align: center;
+    .presentation ul {
+	    @extend .hidden-sm, .hidden-xs;
+    }
+    ul {
+        @extend .col-lg-3, .col-md-3, .col-sm-4, .col-xs-12;
+        padding: 0;
+        li.head {
+            color: $white;
+            padding: 0;
+            border: 0;
+            .top {
+                padding: 5px;
+                background-color: $black;
+            }
+            .bottom {
+	            padding: 15px 5px;
+                background-color: $dark-grey;
+            }
+            h2 {
+                font-size: 6rem;
+                margin-bottom: 0;
+            }
+            h3 {
+                font-size: 3rem;
+            }
+        }
+        li {
+            padding: 10px 5px;
+            font-size: 1.5rem;
+            color: #8e9395;
+            border: 1px solid rgba(229,229,229,0.3);
+        }
+        li:nth-child(even) {
+           background-color: #f4f4f4;
+         }
+        li.table-footer {
+            border: 0;
+            padding: 0;
+        }
+    }
+    .presentation ul li {
+	    font-weight: $bold;
+    }
+    .presentation ul li.head {
+	    background-color: transparent;
+    }
+    .plan.red ul li.head .bottom {background-color: $light-red;}
+    .plan.red ul li.head .top {background-color: $red;}
+    .plan.dark-red ul li.head .bottom {background-color: $red;}
+    .plan.dark-red ul li.head .top {background-color: $dark-red;}
+    .plan.blue ul li.head .bottom {background-color: $light-blue;}
+    .plan.blue ul li.head .top {background-color: $blue;}
+    .plan.dark-blue ul li.head .bottom {background-color: $blue;}
+    .plan.dark-blue ul li.head .top {background-color: $dark-blue;}
+    .plan.green ul li.head .bottom {background-color: $light-green;}
+    .plan.green ul li.head .top {background-color: $green;}
+    .plan.dark-green ul li.head .bottom {background-color: $green;}
+    .plan.dark-green ul li.head .top {background-color: $dark-green;}
+    .plan.grey ul li.head {color: $dark-grey;}
+    .plan.grey ul li.head .bottom {background-color: $light-grey;}
+    .plan.grey ul li.head .top {background-color: $grey;}
+}    
+
+@media (max-width: $screen-sm-max) {
+    .pricing-table-big {
+        .plan ul li.table-row {
+            position: relative;
+            text-align: right;
+            padding-right: 15px;
+            &:before {
+                content: attr(data-title);
+                position: absolute;
+                font-weight: $bold;
+                top: 10px;
+                left: 15px;
+            }
+        }
+    }
+}
+
+// Pagination
+.pagination {
+    margin-bottom: 50px;
+    .prev a, .next a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    li {
+        span {
+            padding: 10px 0;
+            margin-right: 4px;
+        }
+        a {
+            padding: 10px 15px;
+            background-color: #EBEBEB;
+            border: none;
+            color: #7f8c8d;
+            margin-right: 5px;
+            border-bottom: 4px solid $grey;
+            @include border-radius(4px);
+        }
+        a:hover {
+            background-color: $main-light-color;
+            color: $white;
+            border-bottom-color: $main-color;
+        }
+    }
+    li:last-child a {margin-right: 0;}
+    li.disabled a {
+        border: none;
+    }
+    li.disabled span {
+        border: none;
+        padding-right: 2px;
+        padding-left: 2px;
+        color: #ccc;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    li.active a {
+        background-color: $main-light-color;
+        border-color: $main-color;
+        color: $white;
+        &:hover {
+            border-color: $main-dark-color;
+        }
+    }
+}
+
+// Labels
+.label {
+    @include border-radius(0);
+}
+.label.label-blue {background-color: $blue;}
+.label.label-light-blue {background-color: $light-blue;}
+.label.label-dark-blue {background-color: $dark-blue;}
+.label.label-green {background-color: $green;}
+.label.label-light-green {background-color: $light-green;}
+.label.label-dark-green {background-color: $dark-green;}
+.label.label-red {background-color: $red;}
+.label.label-light-red {background-color: $light-red;}
+.label.label-dark-red {background-color: $dark-red;}
+
+// Alerts
+.alert {
+    @include border-radius(0);
+}
+
+// Bootstrap Social
+/*
+ * Social Buttons for Bootstrap
+ *
+ * Copyright 2013-2015 Panayiotis Lipiridis
+ * Licensed under the MIT License
+ *
+ * https://github.com/lipis/bootstrap-social
+ */
+
+$bs-height-base: ($line-height-computed + $padding-base-vertical * 2);
+$bs-height-lg:   (floor($font-size-large * $line-height-base) + $padding-large-vertical * 2);
+$bs-height-sm:   (floor($font-size-small * 1.5) + $padding-small-vertical * 2);
+$bs-height-xs:   (floor($font-size-small * 1.2) + $padding-small-vertical + 1);
+
+.btn-social {
+  position: relative;
+  padding-left: ($bs-height-base + $padding-base-horizontal);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  > :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: $bs-height-base;
+    line-height: ($bs-height-base + 2);
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  &.btn-lg {
+    padding-left: ($bs-height-lg + $padding-large-horizontal);
+    > :first-child {
+      line-height: $bs-height-lg;
+      width: $bs-height-lg;
+      font-size: 1.8em;
+    }
+  }
+  &.btn-sm {
+    padding-left: ($bs-height-sm + $padding-small-horizontal);
+    > :first-child {
+      line-height: $bs-height-sm;
+      width: $bs-height-sm;
+      font-size: 1.4em;
+    }
+  }
+  &.btn-xs {
+    padding-left: ($bs-height-xs + $padding-small-horizontal);
+    > :first-child {
+      line-height: $bs-height-xs;
+      width: $bs-height-xs;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.btn-social-icon {
+  @extend .btn-social;
+  height: ($bs-height-base + 2);
+  width: ($bs-height-base + 2);
+  padding: 0;
+  > :first-child {
+    border: none;
+    text-align: center;
+    width: 100%!important;
+  }
+  &.btn-lg {
+    height: $bs-height-lg;
+    width: $bs-height-lg;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &.btn-sm {
+    height: ($bs-height-sm + 2);
+    width: ($bs-height-sm + 2);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &.btn-xs {
+    height: ($bs-height-xs + 2);
+    width: ($bs-height-xs + 2);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin btn-social($color-bg, $color: #fff) {
+  background-color: $color-bg;
+  @include button-variant($color, $color-bg, rgba(0,0,0,.2));
+}
+
+
+.btn-adn           { @include btn-social(#d87a68); }
+.btn-bitbucket     { @include btn-social(#205081); }
+.btn-dropbox       { @include btn-social(#1087dd); }
+.btn-facebook      { @include btn-social(#3b5998); }
+.btn-flickr        { @include btn-social(#ff0084); }
+.btn-foursquare    { @include btn-social(#f94877); }
+.btn-github        { @include btn-social(#444444); }
+.btn-google        { @include btn-social(#dd4b39); }
+.btn-instagram     { @include btn-social(#3f729b); }
+.btn-linkedin      { @include btn-social(#007bb6); }
+.btn-microsoft     { @include btn-social(#2672ec); }
+.btn-odnoklassniki { @include btn-social(#f4731c); }
+.btn-openid        { @include btn-social(#f7931e); }
+.btn-pinterest     { @include btn-social(#cb2027); }
+.btn-reddit        { @include btn-social(#eff7ff, #000); }
+.btn-soundcloud    { @include btn-social(#ff5500); }
+.btn-tumblr        { @include btn-social(#2c4762); }
+.btn-twitter       { @include btn-social(#55acee); }
+.btn-vimeo         { @include btn-social(#1ab7ea); }
+.btn-vk            { @include btn-social(#587ea3); }
+.btn-yahoo         { @include btn-social(#720e9e); }
+
+// Tabs
+.tab-links {
+	@extend .nav, .nav-tabs;
+    text-align: center;
+    li {
+        float: none;
+        display: inline-block;
+        a {
+            padding: 10px 25px; 
+            font-size: 1.777rem;
+            color: #7f8c8d;
+            @include border-radius(0);
+            &:hover {
+                background: transparent;
+                border: 1px solid transparent;
+                color: $dark-grey;
+            }
+        }
+    }
+    li.active a {
+        color: $dark-grey;
+    }
+    li.desktop {
+        @extend .hidden-xs, .hidden-sm;
+    }
+}
+.tabs {
+    @extend .tab-content;
+    margin-top: 50px;
+}
+
+
+.responsive-tab-links {
+    @extend .hidden-lg, .hidden-md;
+	@extend .dropdown;
+    .tabs-toggle {
+        outline: none;
+        background-color: transparent;
+        border: 1px solid $border-color;
+        border-bottom-color: $white;
+        &:hover {
+            border: 1px solid $border-color;
+            border-bottom-color: $white;
+        }
+    }
+    .dropdown-menu {
+        border-top-color: $white;
+        padding-top: 0;
+        li {
+            width: 100%;
+            a {
+                padding: 10px 15px;
+                &:hover {
+                    border: none;
+                    background-color: $white;
+                }
+            }
+        }
+
+        li.active a {
+            background-color: $white;
+            color: $dark-grey;
+            &:hover {
+                color: $dark-grey;
+            }
+        }
+    }
+}
+.responsive-tab-links.open {
+	.tabs-toggle, .tabs-toggle:active, .tabs-toggle:focus {
+	    outline: none;
+        background-color: transparent;
+        border: 1px solid $border-color;
+        border-bottom-color: $white;
+    }
+}
+
+// Blocks
+.block {
+    background-color: $grey;
+    padding: 15px 35px;
+    color: $white;
+    margin: 10px 0;
+    @include border-radius(4px);
+    border: 1px solid $border-color;
+    @extend .row;
+	.image {
+	    @extend .col-lg-2, .col-md-2, .col-sm-3, .col-xs-12;
+        text-align: center;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .text {
+        @extend .col-lg-10, .col-md-10, .col-sm-9, .col-xs-12;
+        h1 {
+            margin-top: 0;
+        }
+    }
+}
+.block.grey {background-color: $grey;color: $dark-grey;}
+.block.blue {background-color: $light-blue; border-color: $blue;}
+.block.green {background-color: $light-green; border-color: $green;}
+.block.red {background-color: $light-red; border-color: $red;}
+.block.dark {background-color: $dark-grey; border-color: $black;}

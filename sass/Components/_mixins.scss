@@ -1,0 +1,39 @@
+// Css Basics
+@mixin border-radius($r) {
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    -ms-border-radius: $r;
+    -o-border-radius: $r;
+    border-radius: $r;
+}
+
+@mixin transition($t) {
+    -webkit-transition: $t;
+    -moz-transition: $t;
+    -ms-transition: $t;
+    -o-transition: $t;
+    transition: $t;
+}
+
+@mixin opacity($o) {
+    -moz-opacity: $o;
+    -khtml-opacity: $o;
+    filter:alpha(opacity=($o*100));
+    opacity: $o;
+}
+
+@mixin shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    -ms-box-shadow:inset $top $left $blur $color;
+    -o-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    -ms-box-shadow: $top $left $blur $color;
+    -o-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}

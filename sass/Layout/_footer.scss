@@ -1,0 +1,164 @@
+// Top Footer
+.top-footer {
+    padding: 40px 5px;
+    background-color: #1E2021;
+    .resume {
+	    @extend .row;
+        padding-bottom: 5px;
+        border-bottom: 2px solid rgba(229, 229, 229, 0.1);
+        .logo {
+            font-weight: $bold;
+            color: $grey;
+            font-size: 3rem;
+            @include transition(color .3s);
+            &:hover {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        .stat {
+            @extend .pull-right;
+            padding-top: 10px;
+            p {
+                display: inline-block;
+                color: #7A8287;
+                margin-right: 10px;
+            }
+            p:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .about, .client-service {
+        @extend .col-lg-3, .col-md-3;
+        padding-top: 20px;
+        color: $grey;
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .twitter {
+        @extend .col-lg-4, .col-md-4;
+        padding-top: 20px;
+        color: $grey;
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .links {
+       @extend .col-lg-2, .col-md-2;
+        padding-top: 20px;
+        color: $grey;
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        } 
+    }
+    .about, .links {@extend .col-sm-6, .col-xs-12;}
+    .twitter, .client-service {@extend .col-sm-12, .col-xs-12;}
+    .about {
+        p {color: #7a8287;}
+        ul {
+            @extend .nav, .nav-pills;
+            li {margin-right: 10px;}
+            li:last-child {margin-right: 0;}
+            li a {
+                padding: 0;
+                font-size: 2rem;
+                background-color: transparent;
+                .fa-stack-1x {color: $white;}
+                .icon-facebook .fa-stack-2x {color: #3b5998;}
+                .icon-twitter .fa-stack-2x {color: #00aced;}
+                .icon-youtube .fa-stack-2x {color: #bb0000;}
+                .icon-google-plus .fa-stack-2x {color: #dd4b39;}
+                .icon-instagram .fa-stack-2x {color: #125688;}
+                &:hover {
+                    background-color: transparent;
+                    .icon-facebook .fa-stack-2x {color: #223458;}
+                    .icon-twitter .fa-stack-2x {color: #007EAD;}
+                    .icon-youtube .fa-stack-2x {color: #7B0000;}
+                    .icon-google-plus .fa-stack-2x {color: #9D3529;}
+                    .icon-instagram .fa-stack-2x {color: #0A2E48;}
+                }
+            }
+        }
+    }
+    .links {
+        ul li {
+            margin-bottom: 6px;
+            a {
+                color: #7a8287;
+                font-size: 1.5rem;
+                @include transition(color .3s);
+                &:hover {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+        ul li:last-child {margin-bottom: 0;}
+    }
+    
+    .twitter {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                clear: both;
+            }
+            li a {
+                text-decoration: none;
+                outline: 0;
+            }
+            li img {
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 30px;
+                margin-right: 5px;
+            }
+            li img, li .tweets_txt {
+                float: left;
+                margin-bottom: 20px;
+                color: #ccc;
+            }
+            li:last-child img, li:last-child .tweets_txt {
+                margin-bottom: 0;
+            }
+            li .tweets_txt {
+                width: 70%;
+
+            }
+            li .tweets_txt span {
+                font-style: italic;
+                color: #7a8287;
+                display: block;
+            }
+        }
+    }
+    
+    .client-service {
+        p {
+            color: #7a8287;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .top-footer .resume {
+        text-align: center;
+        .stat {
+            float: none !important;
+        }
+    }
+}
+
+// Footer 
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #7a8287;
+    background-color: #181A1A;
+}

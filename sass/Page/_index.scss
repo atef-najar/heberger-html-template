@@ -1,0 +1,423 @@
+// Website Features Section
+.features-section {
+    background-color: #eeeeee;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .features-icons {
+        .feature {
+            @extend .col-lg-3, .col-md-3, .col-sm-6, .col-xs-12;
+            text-align: center;
+            i {
+                font-size: 40px;
+                color: #919BA1;
+            }
+            h2 {
+                color: #636A6E;
+                cursor: default;
+            }
+            h4 {
+                color: #919BA1;
+                cursor: default;
+            }
+            .yellow {color: #F1C40F;}
+            .blue {color: $light-blue;}
+            .green {color: $green;}
+            .purple {color: #8e44ad;}
+        }	
+    }
+}
+
+@media (max-width: 991px) {
+    .features-icons {
+	    padding-bottom: 0;
+    }
+    .features-icons .feature {
+	    margin-bottom: 40px;
+    }
+}
+
+// Prices Section
+.prices-section {
+	padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    h1 {
+        color: $dark-grey;
+        font-weight: $bold;
+        margin-bottom: 5px;
+    }
+    h2 {
+        color: #636a6e;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}
+
+// Domain Search Section
+.domain-search {
+	padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background: url('../images/stock1.jpg') center center no-repeat;
+    position: relative;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(58, 154, 240, 0.91);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    h1 {
+        color: $white;
+        font-weight: $bold;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .input-group, .input-group input, .input-group .btn{
+	    height: 70px;
+    }
+    .btn {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .input-group {
+        position: relative;
+        .dropdown {
+	        position: absolute;
+            right: 76px;
+            top: 21px;
+            z-index: 1000;
+            .btn {
+                padding-top: 21px;
+                padding-bottom: 21px;
+            }
+        }
+    }
+    .dropdown-menu {
+        background-color: $green;
+        border: 0;
+        top: 40px;
+        border-bottom: 2px solid $dark-green;
+        min-width: 0;
+        width: auto;
+        li button {
+            color: $grey;
+            background-color: transparent;
+            text-align: center;
+            font-size: 1.777rem;
+            padding-left: 26px;
+            padding-right: 26px;
+            border: 0;
+            @include border-radius(0);
+            &:hover {
+               color: $white;
+                background-color: transparent;
+            }
+        }
+    }
+    .input-group-addon {
+        @extend .hidden-xs;
+        background-color: $light-blue;
+        border: 0;
+        color: $white;
+        border-bottom: 4px solid $blue;
+        small {
+            margin-bottom: 5px;
+            display: block;
+        }
+        strong {font-size: 3rem;
+        }
+    }
+}
+
+// Features Section
+.features-list-section {
+	padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    h1 {
+        color: $dark-grey;
+        font-weight: $bold;
+        margin-bottom: 5px;
+    }
+    h2 {
+        color: #636a6e;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .feature-post {
+        text-align: left;
+        margin-top: 10px;
+        cursor: pointer;
+        @extend .col-lg-4, .col-md-4, .col-sm-6, .col-xs-12;
+        a {
+            color: #919ba1;
+        }
+        .thumb {
+            @extend .col-lg-3, .col-md-3, .col-sm-4, .col-xs-4;
+            text-align: center;
+            margin-top: 20px;
+            i {
+                text-align: center;
+                width: 75px;
+                height: 75px;
+                padding: 20px;
+                font-size: 3.5rem;
+                color: $white;
+                @include border-radius(100%);
+            }
+        }
+        .feature-text {
+	        @extend .col-lg-9, .col-md-9, .col-sm-8, .col-xs-8; 
+            h3 {
+                font-size: 3rem;
+                color: #7A8287;
+            }
+        }
+        &:hover {
+            box-shadow: inset 0 0 5px $border-color;
+        }
+        
+        .thumb.yellow i {background-color: #f1c40f;}
+        .thumb.red i {background-color: $red;}
+        .thumb.blue i {background-color: $blue;}
+        .thumb.green i {background-color: $green;}
+        .thumb.grey i {background-color: $grey;}
+        .thumb.dark i {background-color: $dark-grey;}
+        .thumb.purple i {background-color: #9b59b6;}
+        .thumb.orange i {background-color: #e67e22;}
+        
+    }
+}
+
+
+// Feedback Section
+.feedback-section {
+    width: 100%;
+    padding: 45px 0;
+    background-color: $red;
+    text-align: center;
+    h1 {
+        color: $white;
+        font-weight: $bold;
+        margin-bottom: 5px;
+    }
+    h2 {
+        color: #eee;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .feedback-slider {
+	    text-align: center;
+        .feedback-post {
+            .feedback-quote {
+                position: relative;
+                width: 300px;
+                height: 150px;
+                padding: 20px 10px;
+                background: #f9f9f9;
+                color: #7a8287;
+                font-style: italic;
+                margin: 0 auto;
+                @include border-radius(15px);
+                &:after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    z-index: 1;
+                    left: 45%;
+                    bottom: -15px;
+                    border-style: solid;
+                    border-width: 15px 15px 0;
+                    border-color: #f9f9f9 transparent;
+                }
+            }
+            .feedback-user {
+                margin-top: 30px;
+                a {
+                    color: $white;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    &:focus {
+                        text-decoration: none;
+                    }
+                }
+                h4 {
+                    font-size: 2.1rem;
+                    margin-bottom: 2px;
+                }
+                p {
+                    color: #eee;
+                }
+            }
+	        .feedback-user img {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+	            @include border-radius(100%);
+            }
+        }
+    }
+    
+    // Dots
+    .owl-controls {
+      top: 0;
+      position: relative;
+      width: 100%;
+        @extend .hidden-xs;
+    }
+    .owl-controls.clickable {
+      cursor: default;
+    }
+    .owl-controls .owl-dots,
+    .owl-controls .owl-pagination {
+      margin-bottom: 0;
+      text-align: center;
+      padding-top: 0;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    .owl-controls .owl-dots .owl-dot,
+    .owl-controls .owl-pagination .owl-dot,
+    .owl-controls .owl-dots .owl-page,
+    .owl-controls .owl-pagination .owl-page {
+      padding: 9px;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    .owl-controls .owl-dots .owl-dot span,
+    .owl-controls .owl-pagination .owl-dot span,
+    .owl-controls .owl-dots .owl-page span,
+    .owl-controls .owl-pagination .owl-page span {
+      width: 10px;
+      height: 10px;
+      display: block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      background-color: $grey;
+    }
+    .owl-controls .owl-dots .owl-dot.active,
+    .owl-controls .owl-pagination .owl-dot.active,
+    .owl-controls .owl-dots .owl-page.active,
+    .owl-controls .owl-pagination .owl-page.active {
+      cursor: default;
+    }
+    .owl-controls .owl-dots .owl-dot.active span,
+    .owl-controls .owl-pagination .owl-dot.active span,
+    .owl-controls .owl-dots .owl-page.active span,
+    .owl-controls .owl-pagination .owl-page.active span {
+      -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5;
+      -khtml-opacity: 0.5;
+      opacity: 0.5;
+    }
+}
+
+// Companies Section
+.companies-section {
+	padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    h1 {
+        color: $dark-grey;
+        font-weight: $bold;
+        margin-bottom: 40px;
+    }
+    .post {
+        @extend .col-lg-4, .col-md-4, .col-sm-6, .col-xs-6;
+        border-right: 2px solid $grey;
+        border-top: 2px solid $grey;
+        padding: 20px;
+        .logo img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .post.last-col {border-right: 0;}
+    .post.first-row {border-top: 0;}
+}
+
+@media (max-width: $screen-xs-max) {
+    .companies-section .post {
+        padding: 0;
+        .logo img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+// Subscribe Section
+.subscribe-section {
+    margin-top: 40px;
+	padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background: url('../images/stock1.jpg') center center no-repeat;
+    position: relative;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(10, 188, 156, 0.91);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    h1 {
+        color: $white;
+        font-weight: $bold;
+        margin-bottom: 20px;
+    }
+    small {
+        color: #eee;
+    }
+    form {
+        @extend .form-inline;
+    }
+    .input-group {
+        width: 100%;
+        margin: 0 auto;
+    }
+    input {
+        outline: none;
+
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+
+.table-styling {
+	.post.last-col {border-right: 0;}
+    .post.first-row {border-top: 0;}
+}

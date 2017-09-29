@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="121.31px" height="95.639px" viewBox="0 0 121.31 95.639" enable-background="new 0 0 121.31 95.639" xml:space="preserve">
+<g id="icon_x5F_circle" display="none">
+	<circle display="inline" fill="#22273D" cx="64.047" cy="45.095" r="105.5"/>
+</g>
+<g id="drop_x5F_middle">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F59D12" d="M29.299,70.205c2.315,3.173,1.627,7.616-1.538,9.926
+		c-6.285,4.586-17.116,3.688-17.116,3.688s2.552-10.665,8.733-15.176C22.542,66.333,26.984,67.033,29.299,70.205z"/>
+</g>
+<g id="drop_x5F_right">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F59D12" d="M36.165,77.228c3.132,2.371,3.752,6.825,1.387,9.948
+		c-4.696,6.203-15.328,8.463-15.328,8.463s-0.63-10.949,3.989-17.049C28.579,75.467,33.034,74.857,36.165,77.228z"/>
+</g>
+<g id="drop_x5F_left">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F59D12" d="M25.31,65.695c0.133,3.926-2.934,7.214-6.85,7.347
+		c-7.775,0.262-16.23-6.568-16.23-6.568s8.104-7.389,15.751-7.646C21.896,58.694,25.178,61.769,25.31,65.695z"/>
+</g>
+<g id="drop_x5F_small_x5F_left">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F59D12" d="M19.782,70.098c0.955,2.058,0.065,4.498-1.989,5.45
+		c-4.076,1.891-10.111,0.163-10.111,0.163s2.645-5.756,6.655-7.615C16.389,67.144,18.829,68.039,19.782,70.098z"/>
+</g>
+<g id="drop_x5F_small_x5F_right">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F59D12" d="M24.163,77.913c2,1.069,2.757,3.554,1.689,5.551
+		c-2.118,3.962-7.98,6.212-7.98,6.212s-1.349-6.19,0.737-10.086C19.676,77.593,22.163,76.842,24.163,77.913z"/>
+</g>
+<g id="rocket_x5F_under_x5F_base">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#B94A00" d="M41.065,71.744l-1.941-2.659c-0.882-1.29-1.812-2.612-2.795-3.959
+		c-0.983-1.347-1.959-2.636-2.918-3.869l-1.941-2.659c2.122-10.557,13.856-25.427,31.023-37.955
+		C85.548,3.818,109.649-2.404,116.326,6.745c6.677,9.15-6.599,30.205-29.653,47.029C69.506,66.303,51.766,72.943,41.065,71.744z"/>
+</g>
+<g id="wing_x5F_right">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#B94A00" d="M82.391,53.48c0,0,7.781,16.269-31.234,38.794l0.703-22.87
+		L82.391,53.48z"/>
+</g>
+<g id="wing_x5F_left">
+	<g id="wing_x5F_right_x5F_shadow">
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#D35400" d="M66.765,54.418c10.69,5.175-4.508,31.446-15.609,37.856
+			l0.703-22.87C51.859,69.403,62.257,55.027,66.765,54.418z"/>
+	</g>
+	<g id="left_x5F_wing">
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#B94A00" d="M36.29,48.069l-21.995-6.306
+			c33.35-30.287,46.472-17.915,46.472-17.915L36.29,48.069z"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#D35400" d="M36.29,48.069l-21.995-6.306
+			c9.49-8.618,39.145-15.079,40.813-3.32C53.153,42.551,36.29,48.069,36.29,48.069z"/>
+	</g>
+</g>
+<g id="Rocket_x5F_Base">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#E6E7E8" d="M47.592,73.985c-1.724-3.419-4.249-7.512-7.328-11.731
+		c-3.079-4.219-6.207-7.872-8.937-10.556c5.26-10.07,15.979-21.884,30.139-32.218C86.256,1.39,112.171-5.301,119.351,4.537
+		c7.18,9.838-7.096,32.479-31.884,50.57C73.307,65.441,58.786,72.046,47.592,73.985z"/>
+</g>
+<g id="Rocket_x5F_Shadow">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#D1D3D4" d="M38.175,59.486c44.317-8.104,73.125-44.378,81.64-54.488
+		c6.307,10.104-7.882,32.255-32.232,50.025C73.423,65.356,58.903,71.961,47.709,73.9c0,0-1.85-3.337-4.194-6.929
+		C41.172,63.378,38.175,59.486,38.175,59.486z"/>
+</g>
+<g id="large_x5F_window">
+	
+		<radialGradient id="SVGID_1_" cx="64.4316" cy="19.0306" r="15.2139" fx="54.9852" fy="19.034" gradientTransform="matrix(0.5895 0.8078 -0.8078 0.5895 61.1458 -32.75)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#2DCB73"/>
+		<stop  offset="0.5868" style="stop-color:#2DCB73"/>
+		<stop  offset="0.6834" style="stop-color:#2DCB73"/>
+		<stop  offset="0.6845" style="stop-color:#2AC16D"/>
+		<stop  offset="0.6861" style="stop-color:#29B968"/>
+		<stop  offset="0.6897" style="stop-color:#28B767"/>
+	</radialGradient>
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_1_)" cx="84.765" cy="29.778" r="10.544"/>
+</g>
+<g id="small_x5F_window">
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="#28B767" cx="67.719" cy="42.218" r="5.212"/>
+</g>
+</svg>

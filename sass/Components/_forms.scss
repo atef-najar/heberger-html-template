@@ -1,0 +1,42 @@
+input[type=text], input[type=email], input[type=password] {
+    -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+      -ms-border-radius: 0 !important;
+      -o-border-radius: 0 !important;
+          border-radius: 0 !important;
+    padding: 20px 10px !important;
+    font-size: 1.777rem;
+    border-color: $grey;
+    margin-bottom: 10px;
+    border-bottom: 4px solid $grey;
+    @include shadow(0,0,0,0);
+    @extend .form-control;
+    &::-webkit-input-placeholder {
+        color: #ccc;
+    }
+    &:-moz-placeholder {
+        color: #ccc;
+    }
+    &::-moz-placeholder {
+        color: #ccc;
+    }
+    &:-ms-input-placeholder {
+        color: #ccc;
+    }
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group .input-group-addon {
+    padding: 10px 20px;
+    font-size: 1.333rem;
+    border-color: $grey;
+    border-bottom: 4px solid $grey;
+    @include border-radius(0);
+}
+
+input.flat, .input-group .input-group-addon.flat {
+    border: 1px solid $border-color !important;
+}

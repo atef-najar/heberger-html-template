@@ -1,0 +1,146 @@
+.custom-btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.777rem;
+    border: none;
+    display: block;
+    @include border-radius(0px);
+    @include transition(background-color .3s);
+}
+
+.btn.btn-small {
+    display: inline;
+    width: auto;
+    padding: 10px 30px;
+}
+
+.btn.btn-round {
+    display: inline;
+    width: auto;
+    padding: 10px 30px;
+    @include border-radius(15px);
+}
+
+.btn.btn-circle {
+    display: inline;
+    width: auto;
+    padding: 10px;
+    @include border-radius(100%);
+}
+
+.btn.flat {
+    border: 0 !important;
+}
+
+.input-group .input-group-btn .btn {
+    padding: 8px 20px;
+}
+
+.btn.btn-transparent {
+	background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
+    &:hover {
+        background-color: $white;
+        color: $dark-grey;
+    }
+}
+
+.btn.btn-white {
+    background-color: $white;
+    color: $dark-grey;
+    &:hover {
+        background-color: $grey;
+    }
+}
+
+.btn.btn-grey {
+    background-color: $grey;
+    color: $dark-grey;
+    border-bottom: 4px solid rgba(29,29,29,0.2);
+    &:hover {
+        background-color: #a5a5a5;
+        border-bottom-color: #a5a5a5;
+    }
+}
+
+.btn.btn-light-grey {
+    background-color: $light-grey;
+    color: $grey;
+    border-bottom: 4px solid #a5a5a5;
+    &:hover {
+        background-color: #a5a5a5;
+    }
+}
+
+.btn.btn-dark {
+    background-color: $dark-grey;
+    color: $white;
+    border-bottom: 4px solid $black;
+    &:hover {
+        background-color: $black;
+    }
+}
+
+.btn.btn-blue {
+    background-color: $blue;
+    color: $white;
+    border-bottom: 4px solid $dark-blue;
+    &:hover {
+        background-color: $dark-blue;
+    }
+}
+
+.btn.btn-light-blue {
+    background-color: $light-blue;
+    color: $white;
+    border-bottom: 4px solid $blue;
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.btn.btn-green {
+    background-color: $green;
+    color: $white;
+    border-bottom: 4px solid $dark-green;
+    &:hover {
+        background-color: $dark-green;
+    }
+}
+
+.btn.btn-light-green {
+    background-color: $light-green;
+    color: $white;
+    border-bottom: 4px solid $green;
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.btn.btn-red {
+    background-color: $red;
+    color: $white;
+    border-bottom: 4px solid $dark-red;
+    &:hover {
+        background-color: $dark-red;
+    }
+}
+
+.btn.btn-light-red {
+    background-color: $light-red;
+    color: $white;
+    border-bottom: 4px solid $red;
+    &:hover {
+        background-color: $red;
+    }
+}
+
+.btn.btn-yellow {
+    background-color: #F1C40F;
+    color: $white;
+    border-bottom: 4px solid #D7AF0D;
+    &:hover {
+        background-color: #D7AF0D;
+    }
+}
