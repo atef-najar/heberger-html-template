@@ -2,7 +2,7 @@
 
 ## Introduction
 
-> A creative and modern hosting company HTML and CSS technology.
+> A creative and modern hosting company HTML and CSS template.
 It works well with all kind of screens and devices.
 
 ## Demo
