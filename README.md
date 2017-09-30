@@ -24,10 +24,14 @@ It works well with all kind of screens and devices.
 * About the company
 * Login form
 
+## Screenshot
+
+![alt text](http://res.cloudinary.com/atf19/image/upload/c_scale,w_800/v1506766492/Hebegrer_Host_the_right_way_rsenqj.png)
+
 
 ## Installation
 
-> Follow these steps to install and test the app:
+> Follow these steps to download and test the template:
 1. Clone or download this repo
 2. Just use your favorite editor to modify it as you wish
 
